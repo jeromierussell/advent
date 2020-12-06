@@ -1,0 +1,2 @@
+# advent
+Repo for my https://adventofcode.com/ challenge solutions. I did this for fun, with my only real goal being to get correct solutions fairly quickly, so there will be some dumb stuff, commented out lines, bad variable names, etc. 
