@@ -13,6 +13,7 @@ def yo():
         else:
             entry.append(line)
 
+    # need to get the last entry too
     entries.append(entry)
 
     # print entries
@@ -27,7 +28,7 @@ def yo():
         # print str(uniques)
         total += len(uniques)
 
-    print total
+    print "Answer 1 => " + str(total)
 
 
 def yo2():
@@ -45,6 +46,7 @@ def yo2():
         else:
             entry.append(line)
 
+    # need to get the last entry too
     entries.append(entry)
 
     # print entries
@@ -63,8 +65,9 @@ def yo2():
         # print "\n" + str(same)
         total += len(same)
 
-    print total
+    print "Answer 2 => " + str(total)
 
 
 if __name__ == "__main__":
+    yo()
     yo2()

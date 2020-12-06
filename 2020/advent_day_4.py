@@ -27,6 +27,7 @@ eyr:2022
 
 iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719"""
 
+
 def yo():
     with open('./input/advent_day_4_input.txt', 'r') as the_file:
         raw_lines = the_file.read().splitlines()
@@ -59,10 +60,10 @@ def yo():
                     else:
                         key = None
 
-    # need to get the lst entry too
+    # need to get the last entry too
     entries.append(entry)
 
-    print(entries)
+    # print(entries)
 
     """
 byr (Birth Year)
@@ -83,7 +84,8 @@ cid (Country ID)
         else:
             print("FAILS: " + str(e))
 
-    print(passes)
+    print("Answer 1 => " + str(passes))
+
 
 def yo2():
     with open('./input/advent_day_4_input.txt', 'r') as the_file:
@@ -120,7 +122,7 @@ def yo2():
     # need to get the lst entry too
     entries.append(entry)
 
-    print(entries)
+    # print(entries)
 
     """
 byr (Birth Year)
@@ -206,8 +208,9 @@ cid (Country ID)
 
         counter += 1
 
-    print(passes)
+    print("Answer 2 => " + str(passes))
 
 
 if __name__ == "__main__":
     yo()
+    yo2()

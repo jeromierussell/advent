@@ -49,7 +49,7 @@ def yo():
 
     seat_min = min(seat_ids)
     answer_1 = max(seat_ids)
-    print "\n" + str(answer_1)
+    print "Answer 1 => " + str(answer_1)
 
     # print str(seats)
     for row in range(1, 127):
@@ -58,7 +58,7 @@ def yo():
                 seat_id = row * 8 + col
 
                 if seat_id not in seat_ids and answer_1 >= seat_id >= seat_min:
-                    print "\n" + str(seat_id)
+                    print "Answer 2 => " + str(seat_id)
 
 
 if __name__ == "__main__":

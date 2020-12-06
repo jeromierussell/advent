@@ -14,14 +14,12 @@ def advent_1():
 
     target = 2020
 
-    y_data = data[:]
-
     x_answer = 0
     y_answer = 0
 
     for x in data:
         for y in data:
-            if (x + y == target):
+            if x + y == target:
                 x_answer = x
                 y_answer = y
                 break
@@ -30,9 +28,10 @@ def advent_1():
 
         break
 
-    print(x)
-    print(y)
-    print(x*y)
+    print(x_answer)
+    print(y_answer)
+    print("Answer 1 => " + str(x_answer * y_answer))
+
 
 def advent_2():
     with open('./input/advent_day_1_input.txt', 'r') as the_file:
@@ -58,7 +57,7 @@ def advent_2():
     for x in data:
         for y in y_data:
             for z in z_data:
-                if (x + y + z == target):
+                if x + y + z == target:
                     x_answer = x
                     y_answer = y
                     z_answer = z
@@ -71,8 +70,9 @@ def advent_2():
     print(x_answer)
     print(y_answer)
     print(z_answer)
-    print(x_answer*y_answer*z_answer)
+    print("Answer 2 => " + str(x_answer * y_answer * z_answer))
 
 
 if __name__ == "__main__":
+    advent_1()
     advent_2()

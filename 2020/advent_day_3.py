@@ -15,11 +15,11 @@ def yo():
         x_index += 3
         y_index += 1
 
-        if (y_index >= height):
+        if y_index >= height:
             print("I'm out")
             break
 
-        if (x_index >= line_length):
+        if x_index >= line_length:
             print('wrapping')
             x_index = x_index - line_length
 
@@ -27,11 +27,12 @@ def yo():
 
         # print(lines[y_index][x_index])
 
-        if (lines[y_index][x_index] == '#'):
+        if lines[y_index][x_index] == '#':
             print("hit!")
             trees += 1
 
-    print(trees)
+    print("Answer 1 => " + str(trees))
+
 
 def helper(lines, line_length, height, right, down):
     trees = 0
@@ -42,11 +43,11 @@ def helper(lines, line_length, height, right, down):
         x_index += right
         y_index += down
 
-        if (y_index >= height):
+        if y_index >= height:
             print("I'm out")
             break
 
-        if (x_index >= line_length):
+        if x_index >= line_length:
             print('wrapping')
             x_index = x_index - line_length
 
@@ -54,13 +55,14 @@ def helper(lines, line_length, height, right, down):
 
         # print(lines[y_index][x_index])
 
-        if (lines[y_index][x_index] == '#'):
+        if lines[y_index][x_index] == '#':
             print("hit!")
             trees += 1
 
     print(trees)
 
     return trees
+
 
 def yo2():
     with open('./input/advent_day_3_input.txt', 'r') as the_file:
@@ -83,11 +85,11 @@ def yo2():
     print(try_4)
     print(try_5)
 
-    # print(long(int(try_1) * int(try_2) * int(try_3) * int(try_4) & int(try_5)))
-    print(try_1 * try_2 * try_3 * try_4 * try_5)
+    print("Answer 2 => " + str(try_1 * try_2 * try_3 * try_4 * try_5))
 
     # 7812180000
 
 
 if __name__ == "__main__":
     yo()
+    yo2()
